@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="row">
+        <div class="col-auto pe-0">
+            <div class="navbar-kiri">
+                <div class="foto"></div>
+                <div class="navbar-home">
+                    <img src="./Picture/white-home.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Dashboard</p>
+                </div>
+                <div class="navbar-cars">
+                    <img src="./Picture/delivery-truck.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Cars</p>
+                </div>
+            </div>
+        </div>
+        <div class="col ps-0">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <div class="logo-panjang"></div>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <h5 class="judul-offcanvas">CARS</h5>
+                    <button class="button-offcanvas">List Cars</button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="col-auto ms-2">
+                    <button class="navbar-light navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control-search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn-search" type="submit">
+                        <div class="font-button">Search</div>
+                    </button>
+                </form>
+                <ul class="nav-item dropdown m-0 d-flex">
+                    <img src="./Picture/user.png" alt="" style="width: 32px; height: 32px; margin-top: 5px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Unis Badri
+                    </a>
+                </ul>
+            </nav>
+            <!-- Beranda -->
+            <div class="row">
+                <div class="bg-beranda">
+                    <div class="direktori">
+                        Cars >
+                        <div class="direktori-now">
+                            List Cars
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex flex-row p-0">
+                        <div class="judul-beranda">
+                            List Cars
+                        </div>
+                        <a href="./add-car.html">
+                            <button class="new-car">
+                                + Add New Car
+                            </button>
+                        </a>
+                    </div>
+                    <div class="sorting-container d-flex flex-row mx-2">
+                        <button class="sorting me-2">
+                            All
+                        </button>
+                        <button class="sorting me-2">
+                            Small
+                        </button>
+                        <button class="sorting me-2">
+                            Medium
+                        </button>
+                        <button class="sorting me-2">
+                            Large
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Isi Mobil -->
+            <div class="col m-2">
+                <div class="card" style="width: 20rem; height: 450px">
+                    <img src="" class="img-fluid card-img-top " style="object-fit: scale-down; height: 200px; ">
+                    <div class="card-body" style="font-size: 14px;">
+                        <p class="card-title"></p>
+                        <p class="fw-bold">
+                            <!-- <%= e.name %> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum quisquam repudiandae nulla dolorem totam earum, excepturi ex voluptas vitae odit debitis consequuntur saepe sequi eaque exercitationem ducimus corrupti repellendus.
+                        </p>
+                        <div class="">
+                            <!-- <%= e.price %> -->
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dicta explicabo quis, assumenda eos doloremque ab numquam beatae in recusandae. Quaerat, repudiandae iste magnam facilis id veritatis nobis asperiores culpa!
+                        </div>
+                        <div class="">
+                            <!-- <%= e.size %> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis odit distinctio architecto blanditiis facilis ipsa magnam sapiente numquam nostrum corporis, eius ipsum animi illo autem, provident incidunt recusandae fugiat?
+                        </div>
+                        <div class="">
+                            <!-- <%= e.image %> -->
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam et qui aut ea enim unde quaerat cumque maiores accusamus doloribus, vel consectetur praesentium asperiores vero nemo dignissimos dicta reprehenderit!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
